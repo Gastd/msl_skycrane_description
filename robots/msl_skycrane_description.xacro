@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="msl_skycrane_description">
+
+    <!-- <xacro:include filename="$(find msl_skycrane_description)/robot/landing_engines.xacro"/> -->
+
+
+</robot>

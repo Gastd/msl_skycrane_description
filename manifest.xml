@@ -1,0 +1,6 @@
+<package>
+  <description brief="msl_skycrane">msl_skycrane</description>
+  <depend package="gazebo" />
+  <author>me</author>
+  <license>BSD</license>
+</package>

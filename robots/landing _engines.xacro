@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="msl_skycrane_description">
+	<xacro:macro name="sonar_pioneer" params="name parent *origin">
+		<link name="${name}_frame">
+			<inertial>
+				<mass value="" />
+	</xacro:macro>
+</robot>
