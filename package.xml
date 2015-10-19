@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <name>msl_skycrane_description</name>
+  <version>0.0.0</version>
+  <description>The MSL Skycrane Description package</description>
+
+  <maintainer email="gabriel.araujo.5000@gmail.com">Gabriel Araujo</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <export>
+  </export>
+</package>
