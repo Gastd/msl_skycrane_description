@@ -7,7 +7,7 @@
     default="False" />
   <param
     name="robot_description"
-    textfile="$(find msl_skycrane)/robots/msl_skycrane.URDF" />
+    textfile="$(find msl_skycrane_description)/robots/msl_skycrane.URDF" />
   <param
     name="use_gui"
     value="$(arg gui)" />
@@ -23,5 +23,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find msl_skycrane)/urdf.rviz" />
+    args="-d $(find msl_skycrane_description)/urdf.rviz" />
 </launch>

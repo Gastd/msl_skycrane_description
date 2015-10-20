@@ -4,17 +4,17 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="-0.0695263667722206 3.27071980328497E-14 0.128472634252891"
+        xyz="0.082244 -1.9129 -0.12297"
         rpy="0 0 0" />
       <mass
-        value="101.141220442297" />
+        value="85.813" />
       <inertia
-        ixx="70.3172051634678"
-        ixy="-9.12898229230553E-14"
-        ixz="1.96309534936085E-16"
-        iyy="70.317205163468"
-        iyz="-4.25824138511248E-15"
-        izz="140.619239143869" />
+        ixx="77.114"
+        ixy="3.0214E-17"
+        ixz="2.8095E-13"
+        iyy="154.22"
+        iyz="-8.04E-17"
+        izz="77.114" />
     </inertial>
     <visual>
       <origin
@@ -22,12 +22,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane/meshes/base_link.STL" />
+          filename="package://msl_skycrane_description/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.86667 0.9098 1 1" />
       </material>
     </visual>
     <collision>
@@ -36,25 +36,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane/meshes/base_link.STL" />
+          filename="package://msl_skycrane_description/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
   <link
-    name="left_upper_arm">
+    name="top_plate">
     <inertial>
       <origin
-        xyz="0.9527 0.78723 0.85"
+        xyz="4.6074E-15 0.015 3.321E-14"
         rpy="0 0 0" />
       <mass
-        value="772.49" />
+        value="794.77" />
       <inertia
-        ixx="659.62"
-        ixy="-224.16"
-        ixz="4.2633E-13"
-        iyy="909.6"
-        iyz="-2.4301E-12"
-        izz="735.53" />
+        ixx="552.55"
+        ixy="1.5918E-15"
+        ixz="7.0543E-13"
+        iyy="1105"
+        iyz="-1.8007E-16"
+        izz="552.55" />
     </inertial>
     <visual>
       <origin
@@ -62,12 +62,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane/meshes/left_upper_arm.STL" />
+          filename="package://msl_skycrane_description/meshes/top_plate.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.64706 0.61961 0.58824 1" />
       </material>
     </visual>
     <collision>
@@ -76,38 +76,38 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane/meshes/left_upper_arm.STL" />
+          filename="package://msl_skycrane_description/meshes/top_plate.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="left_upper_arm_joint"
+    name="top_plate_joint"
     type="fixed">
     <origin
-      xyz="-1.4302 0.6567 -1.8865"
-      rpy="1.5708 5.3027E-17 2.0944" />
+      xyz="0.0822438122963676 0.122966095828938 0.102116404890112"
+      rpy="1.5707963267949 0 0" />
     <parent
       link="base_link" />
     <child
-      link="left_upper_arm" />
+      link="top_plate" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="right_upper_arm">
+    name="arm_0">
     <inertial>
       <origin
-        xyz="0.9527 0.78723 0.85"
+        xyz="0.95244 0.78731 0.85"
         rpy="0 0 0" />
       <mass
-        value="772.49" />
+        value="2089.2" />
       <inertia
-        ixx="659.62"
-        ixy="-224.16"
-        ixz="-5.4001E-13"
-        iyy="909.6"
-        iyz="9.0949E-13"
-        izz="735.53" />
+        ixx="1784.2"
+        ixy="-606.12"
+        ixz="5.6843E-14"
+        iyy="2459.6"
+        iyz="2.7853E-12"
+        izz="1988.7" />
     </inertial>
     <visual>
       <origin
@@ -115,12 +115,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane/meshes/right_upper_arm.STL" />
+          filename="package://msl_skycrane_description/meshes/arm_0.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.86667 0.9098 1 1" />
       </material>
     </visual>
     <collision>
@@ -129,38 +129,38 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane/meshes/right_upper_arm.STL" />
+          filename="package://msl_skycrane_description/meshes/arm_0.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="right_upper_arm_joint"
+    name="arm_0_joint"
     type="fixed">
     <origin
-      xyz="-0.18113 1.5067 -1.8865"
-      rpy="1.5708 5.3027E-17 1.0472" />
+      xyz="-0.111602540378444 -2 -1.50669872981078"
+      rpy="0 1.04719755119662 0" />
     <parent
-      link="base_link" />
+      link="top_plate" />
     <child
-      link="right_upper_arm" />
+      link="arm_0" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="left_down_arm">
+    name="shoulder_00">
     <inertial>
       <origin
-        xyz="0.9527 0.78723 0.85"
+        xyz="-0.00011974 2.2204E-16 0.057176"
         rpy="0 0 0" />
       <mass
-        value="772.49" />
+        value="8.0556" />
       <inertia
-        ixx="659.62"
-        ixy="-224.16"
-        ixz="-1.1653E-12"
-        iyy="909.6"
-        iyz="8.2423E-13"
-        izz="735.53" />
+        ixx="0.046837"
+        ixy="-1.7347E-18"
+        ixz="3.9084E-05"
+        iyy="0.046839"
+        iyz="3.3644E-18"
+        izz="0.017099" />
     </inertial>
     <visual>
       <origin
@@ -168,12 +168,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane/meshes/left_down_arm.STL" />
+          filename="package://msl_skycrane_description/meshes/shoulder_00.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.82745 0.83922 0.82745 1" />
       </material>
     </visual>
     <collision>
@@ -182,38 +182,38 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane/meshes/left_down_arm.STL" />
+          filename="package://msl_skycrane_description/meshes/shoulder_00.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="left_down_arm_joint"
+    name="shoulder_00_joint"
     type="fixed">
     <origin
-      xyz="0.042076 -1.5067 -1.8865"
-      rpy="1.5708 -5.3027E-17 -2.0944" />
+      xyz="2.45 0.4 0.6"
+      rpy="-1.5708 -1.2046E-14 0" />
     <parent
-      link="base_link" />
+      link="arm_0" />
     <child
-      link="left_down_arm" />
+      link="shoulder_00" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="right_down_arm">
+    name="elbow_00">
     <inertial>
       <origin
-        xyz="0.9527 0.78723 0.85"
+        xyz="-0.24673 0.27696 2.4425E-15"
         rpy="0 0 0" />
       <mass
-        value="772.49" />
+        value="3.036" />
       <inertia
-        ixx="659.62"
-        ixy="-224.16"
-        ixz="4.2633E-13"
-        iyy="909.6"
-        iyz="-2.16E-12"
-        izz="735.53" />
+        ixx="0.027063"
+        ixy="4.7759E-17"
+        ixz="1.301E-18"
+        iyy="0.00082504"
+        iyz="1.8613E-16"
+        izz="0.027348" />
     </inertial>
     <visual>
       <origin
@@ -221,12 +221,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane/meshes/right_down_arm.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow_00.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.64706 0.61961 0.58824 1" />
       </material>
     </visual>
     <collision>
@@ -235,38 +235,38 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane/meshes/right_down_arm.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow_00.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="right_down_arm_joint"
+    name="elbow_00_joint"
     type="fixed">
     <origin
-      xyz="1.2911 -0.6567 -1.8865"
-      rpy="1.5708 -5.3027E-17 -1.0472" />
+      xyz="0 0 0"
+      rpy="1.5708 1.0472 2.2093E-14" />
     <parent
-      link="base_link" />
+      link="shoulder_00" />
     <child
-      link="right_down_arm" />
+      link="elbow_00" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="bot_plate">
+    name="wrist_00">
     <inertial>
       <origin
-        xyz="1.4086E-14 0.015 4.0222E-14"
+        xyz="0.0098378 0.097856 6.4721E-08"
         rpy="0 0 0" />
       <mass
-        value="31.724" />
+        value="2.6791" />
       <inertia
-        ixx="28.508"
-        ixy="-6.649E-17"
-        ixz="1.0993E-13"
-        iyy="57.011"
-        iyz="-1.9481E-17"
-        izz="28.508" />
+        ixx="0.014318"
+        ixy="-0.002172"
+        ixz="7.8002E-09"
+        iyy="0.0020544"
+        iyz="-1.0625E-08"
+        izz="0.015916" />
     </inertial>
     <visual>
       <origin
@@ -274,12 +274,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane/meshes/bot_plate.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist_00.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.64706 0.61961 0.58824 1" />
       </material>
     </visual>
     <collision>
@@ -288,20 +288,1716 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane/meshes/bot_plate.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist_00.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="bot_plate_joint"
+    name="wrist_00_joint"
     type="fixed">
     <origin
-      xyz="-0.069526 0 -1.9165"
-      rpy="1.5708 0 0" />
+      xyz="-0.24651 0.64624 0"
+      rpy="3.1416 5.5511E-17 -9.5479E-15" />
     <parent
-      link="base_link" />
+      link="elbow_00" />
     <child
-      link="bot_plate" />
+      link="wrist_00" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="engine_00">
+    <inertial>
+      <origin
+        xyz="0.19997 0.87755 1.7542E-14"
+        rpy="0 0 0" />
+      <mass
+        value="793.36" />
+      <inertia
+        ixx="190.59"
+        ixy="0.010634"
+        ixz="-2.1316E-14"
+        iyy="14.562"
+        iyz="3.3367E-12"
+        izz="190.58" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_00.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.64706 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_00.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="engine_00_joint"
+    type="fixed">
+    <origin
+      xyz="1.68 0.215 0"
+      rpy="3.1416 5.5511E-17 -1.5708" />
+    <parent
+      link="wrist_00" />
+    <child
+      link="engine_00" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="shoulder_01">
+    <inertial>
+      <origin
+        xyz="-0.00011974 -2.2204E-16 0.057176"
+        rpy="0 0 0" />
+      <mass
+        value="8.0556" />
+      <inertia
+        ixx="0.046837"
+        ixy="-8.6736E-18"
+        ixz="3.9084E-05"
+        iyy="0.046839"
+        iyz="8.4703E-19"
+        izz="0.017099" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_01.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.82745 0.83922 0.82745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_01.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_01_joint"
+    type="fixed">
+    <origin
+      xyz="2.45 0.4 1.1"
+      rpy="-1.5708 -1.2046E-14 0" />
+    <parent
+      link="arm_0" />
+    <child
+      link="shoulder_01" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="elbow_01">
+    <inertial>
+      <origin
+        xyz="-0.24673 0.27696 1.1102E-15"
+        rpy="0 0 0" />
+      <mass
+        value="3.036" />
+      <inertia
+        ixx="0.027063"
+        ixy="3.6754E-17"
+        ixz="-1.301E-18"
+        iyy="0.00082504"
+        iyz="2.1646E-16"
+        izz="0.027348" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_01.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_01.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbow_01_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 1.0472 2.2093E-14" />
+    <parent
+      link="shoulder_01" />
+    <child
+      link="elbow_01" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wrist_01">
+    <inertial>
+      <origin
+        xyz="0.0098378 0.097856 6.4721E-08"
+        rpy="0 0 0" />
+      <mass
+        value="2.6791" />
+      <inertia
+        ixx="0.014318"
+        ixy="-0.002172"
+        ixz="7.8002E-09"
+        iyy="0.0020544"
+        iyz="-1.0625E-08"
+        izz="0.015916" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_01.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_01.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wrist_01_joint"
+    type="fixed">
+    <origin
+      xyz="-0.24651 0.64624 0"
+      rpy="3.1416 5.5511E-17 -9.5479E-15" />
+    <parent
+      link="elbow_01" />
+    <child
+      link="wrist_01" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="engine_01">
+    <inertial>
+      <origin
+        xyz="0.19997 0.87755 1.9762E-14"
+        rpy="0 0 0" />
+      <mass
+        value="793.36" />
+      <inertia
+        ixx="190.59"
+        ixy="0.010634"
+        ixz="-3.5527E-14"
+        iyy="14.562"
+        iyz="3.6506E-12"
+        izz="190.58" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_01.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.64706 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_01.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="engine_01_joint"
+    type="fixed">
+    <origin
+      xyz="1.68 0.215 0"
+      rpy="3.1416 5.5511E-17 -1.5708" />
+    <parent
+      link="wrist_01" />
+    <child
+      link="engine_01" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="arm_1">
+    <inertial>
+      <origin
+        xyz="0.952435824722872 0.787310574656656 0.85"
+        rpy="0 0 0" />
+      <mass
+        value="2089.22272867894" />
+      <inertia
+        ixx="1784.16663646343"
+        ixy="-606.123978386156"
+        ixz="-1.52846396980097E-14"
+        iyy="2459.59622293676"
+        iyz="-5.22626040652113E-13"
+        izz="1988.70377359282" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/arm_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/arm_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm_1_joint"
+    type="fixed">
+    <origin
+      xyz="1.249 -2 -0.85"
+      rpy="0 0 0" />
+    <parent
+      link="top_plate" />
+    <child
+      link="arm_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="shoulder_10">
+    <inertial>
+      <origin
+        xyz="-0.00011974 0 0.057176"
+        rpy="0 0 0" />
+      <mass
+        value="8.0556" />
+      <inertia
+        ixx="0.046837"
+        ixy="2.9763E-20"
+        ixz="3.9084E-05"
+        iyy="0.046839"
+        iyz="-1.8835E-17"
+        izz="0.017099" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.82745 0.83922 0.82745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_10_joint"
+    type="fixed">
+    <origin
+      xyz="2.45 0.4 0.6"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="arm_1" />
+    <child
+      link="shoulder_10" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="elbow_10">
+    <inertial>
+      <origin
+        xyz="-0.24673 0.27696 -1.1102E-16"
+        rpy="0 0 0" />
+      <mass
+        value="3.036" />
+      <inertia
+        ixx="0.027063"
+        ixy="-2.9303E-16"
+        ixz="-4.7738E-19"
+        iyy="0.00082504"
+        iyz="5.8088E-18"
+        izz="0.027348" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbow_10_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 1.0472 0" />
+    <parent
+      link="shoulder_10" />
+    <child
+      link="elbow_10" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wrist_10">
+    <inertial>
+      <origin
+        xyz="0.0098378 0.097856 1.53E-08"
+        rpy="0 0 0" />
+      <mass
+        value="2.6791" />
+      <inertia
+        ixx="0.014318"
+        ixy="-0.002172"
+        ixz="6.7229E-09"
+        iyy="0.0020544"
+        iyz="-9.2676E-09"
+        izz="0.015916" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wrist_10_joint"
+    type="fixed">
+    <origin
+      xyz="-0.24651 0.64624 0"
+      rpy="3.1416 0 3.1863E-14" />
+    <parent
+      link="elbow_10" />
+    <child
+      link="wrist_10" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="engine_10">
+    <inertial>
+      <origin
+        xyz="0.19997 0.87755 1.1102E-15"
+        rpy="0 0 0" />
+      <mass
+        value="793.36" />
+      <inertia
+        ixx="190.59"
+        ixy="0.010634"
+        ixz="4.3464E-16"
+        iyy="14.562"
+        iyz="1.4392E-13"
+        izz="190.58" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.64706 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="engine_10_joint"
+    type="fixed">
+    <origin
+      xyz="1.68 0.215 0"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="wrist_10" />
+    <child
+      link="engine_10" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="shoulder_11">
+    <inertial>
+      <origin
+        xyz="-0.00011974 -2.7756E-17 0.057176"
+        rpy="0 0 0" />
+      <mass
+        value="8.0556" />
+      <inertia
+        ixx="0.046837"
+        ixy="1.2825E-20"
+        ixz="3.9084E-05"
+        iyy="0.046839"
+        iyz="-2.0279E-17"
+        izz="0.017099" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.82745 0.83922 0.82745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_11_joint"
+    type="fixed">
+    <origin
+      xyz="2.45 0.4 1.1"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="arm_1" />
+    <child
+      link="shoulder_11" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="elbow_11">
+    <inertial>
+      <origin
+        xyz="-0.24673 0.27696 3.0531E-16"
+        rpy="0 0 0" />
+      <mass
+        value="3.036" />
+      <inertia
+        ixx="0.027063"
+        ixy="-2.9227E-16"
+        ixz="-2.2806E-19"
+        iyy="0.00082504"
+        iyz="1.2057E-17"
+        izz="0.027348" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbow_11_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 1.0472 0" />
+    <parent
+      link="shoulder_11" />
+    <child
+      link="elbow_11" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wrist_11">
+    <inertial>
+      <origin
+        xyz="0.0098378 0.097856 1.53E-08"
+        rpy="0 0 0" />
+      <mass
+        value="2.6791" />
+      <inertia
+        ixx="0.014318"
+        ixy="-0.002172"
+        ixz="6.7229E-09"
+        iyy="0.0020544"
+        iyz="-9.2676E-09"
+        izz="0.015916" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wrist_11_joint"
+    type="fixed">
+    <origin
+      xyz="-0.24651 0.64624 0"
+      rpy="3.1416 0 3.1863E-14" />
+    <parent
+      link="elbow_11" />
+    <child
+      link="wrist_11" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="engine_11">
+    <inertial>
+      <origin
+        xyz="0.19997 0.87755 5.2736E-16"
+        rpy="0 0 0" />
+      <mass
+        value="793.36" />
+      <inertia
+        ixx="190.59"
+        ixy="0.010634"
+        ixz="2.1274E-15"
+        iyy="14.562"
+        iyz="4.252E-14"
+        izz="190.58" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.64706 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="engine_11_joint"
+    type="fixed">
+    <origin
+      xyz="1.68 0.215 0"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="wrist_11" />
+    <child
+      link="engine_11" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="arm_2">
+    <inertial>
+      <origin
+        xyz="0.952435824722876 0.787310574656658 0.849999999999995"
+        rpy="0 0 0" />
+      <mass
+        value="2089.22272867895" />
+      <inertia
+        ixx="1784.16663646343"
+        ixy="-606.123978386155"
+        ixz="-2.04636307898909E-12"
+        iyy="2459.59622293676"
+        iyz="3.5242919693701E-12"
+        izz="1988.70377359283" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/arm_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/arm_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm_2_joint"
+    type="fixed">
+    <origin
+      xyz="0.1116 -2 1.5067"
+      rpy="3.1416 -1.0472 3.1416" />
+    <parent
+      link="top_plate" />
+    <child
+      link="arm_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="shoulder_20">
+    <inertial>
+      <origin
+        xyz="-0.000119737245782847 0 0.0571755103503968"
+        rpy="0 0 0" />
+      <mass
+        value="8.05560156812752" />
+      <inertia
+        ixx="0.0468374920636485"
+        ixy="0"
+        ixz="3.90837016729611E-05"
+        iyy="0.0468393660641385"
+        iyz="1.96816575624009E-17"
+        izz="0.0170993582585797" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_20.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.827450980392157 0.83921568627451 0.827450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_20.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_20_joint"
+    type="fixed">
+    <origin
+      xyz="2.45 0.4 0.6"
+      rpy="-1.5708 -1.2046E-14 0" />
+    <parent
+      link="arm_2" />
+    <child
+      link="shoulder_20" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="elbow_20">
+    <inertial>
+      <origin
+        xyz="-0.000223548856633116 0.1 2.22044604925031E-16"
+        rpy="0 0 0" />
+      <mass
+        value="3.03601604481673" />
+      <inertia
+        ixx="0.027062895785137"
+        ixy="4.16198108962873E-16"
+        ixz="-4.33680868994202E-19"
+        iyy="0.000825043270771542"
+        iyz="1.80872027424894E-16"
+        izz="0.0273478762721397" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_20.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_20.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbow_20_joint"
+    type="fixed">
+    <origin
+      xyz="0.20321 0 0.40196"
+      rpy="-1.5708 1.0472 2.2093E-14" />
+    <parent
+      link="shoulder_20" />
+    <child
+      link="elbow_20" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wrist_20">
+    <inertial>
+      <origin
+        xyz="0.00983784834892454 0.0978560710160052 6.47214095650384E-08"
+        rpy="0 0 0" />
+      <mass
+        value="2.67913313983108" />
+      <inertia
+        ixx="0.0143180994434798"
+        ixy="-0.00217201144733048"
+        ixz="7.80023276070012E-09"
+        iyy="0.00205437189801486"
+        iyz="-1.06249796345001E-08"
+        izz="0.0159156661072159" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_20.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_20.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wrist_20_joint"
+    type="fixed">
+    <origin
+      xyz="0 -0.26928 0"
+      rpy="-5.5511E-17 -5.5511E-17 -9.6034E-15" />
+    <parent
+      link="elbow_20" />
+    <child
+      link="wrist_20" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="engine_20">
+    <inertial>
+      <origin
+        xyz="0.199974015495008 0.877545107523058 1.86517468137026E-14"
+        rpy="0 0 0" />
+      <mass
+        value="793.355843738094" />
+      <inertia
+        ixx="190.586500724057"
+        ixy="0.0106339468597358"
+        ixz="-7.105427357601E-15"
+        iyy="14.5624503451681"
+        iyz="3.52762263844397E-12"
+        izz="190.582428992398" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_20.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.647058823529412 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_20.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="engine_20_joint"
+    type="fixed">
+    <origin
+      xyz="1.68 0.215 0"
+      rpy="3.1416 5.5511E-17 -1.5708" />
+    <parent
+      link="wrist_20" />
+    <child
+      link="engine_20" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="shoulder_21">
+    <inertial>
+      <origin
+        xyz="-0.000119737245781959 0 0.0571755103503968"
+        rpy="0 0 0" />
+      <mass
+        value="8.05560156812752" />
+      <inertia
+        ixx="0.0468374920636485"
+        ixy="1.73472347597681E-18"
+        ixz="3.90837016729671E-05"
+        iyy="0.0468393660641385"
+        iyz="3.03983184110623E-17"
+        izz="0.0170993582585797" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_21.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.827450980392157 0.83921568627451 0.827450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_21.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_21_joint"
+    type="fixed">
+    <origin
+      xyz="2.45 0.4 1.1"
+      rpy="-1.5708 -1.2046E-14 0" />
+    <parent
+      link="arm_2" />
+    <child
+      link="shoulder_21" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="elbow_21">
+    <inertial>
+      <origin
+        xyz="0.246282802089475 0.276961524227066 -2.22044604925031E-15"
+        rpy="0 0 0" />
+      <mass
+        value="3.03601604481672" />
+      <inertia
+        ixx="0.027062895785137"
+        ixy="-4.2934406030426E-17"
+        ixz="-4.33680868994202E-18"
+        iyy="0.000825043270771546"
+        iyz="-1.74719180096039E-16"
+        izz="0.0273478762721397" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_21.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_21.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbow_21_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.0472 -3.1416" />
+    <parent
+      link="shoulder_21" />
+    <child
+      link="elbow_21" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wrist_21">
+    <inertial>
+      <origin
+        xyz="0.00983784834892543 0.0978560710160044 6.47214095650384E-08"
+        rpy="0 0 0" />
+      <mass
+        value="2.67913313983112" />
+      <inertia
+        ixx="0.0143180994434801"
+        ixy="-0.00217201144733051"
+        ixz="7.80023274465393E-09"
+        iyy="0.00205437189801488"
+        iyz="-1.06249796160958E-08"
+        izz="0.0159156661072161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_21.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_21.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wrist_21_joint"
+    type="fixed">
+    <origin
+      xyz="0.24651 0.64624 0"
+      rpy="0 -5.5511E-17 -3.1416" />
+    <parent
+      link="elbow_21" />
+    <child
+      link="wrist_21" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="engine_21">
+    <inertial>
+      <origin
+        xyz="0.199974015495036 0.877545107523053 -8.88178419700125E-16"
+        rpy="0 0 0" />
+      <mass
+        value="793.355843738093" />
+      <inertia
+        ixx="190.586500724057"
+        ixy="0.0106339468654313"
+        ixz="-7.105427357601E-15"
+        iyy="14.5624503451681"
+        iyz="-3.79030140607028E-13"
+        izz="190.582428992398" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_21.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.647058823529412 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_21.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="engine_21_joint"
+    type="fixed">
+    <origin
+      xyz="1.68 0.215 0"
+      rpy="-3.1416 5.5511E-17 -1.5708" />
+    <parent
+      link="wrist_21" />
+    <child
+      link="engine_21" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="arm_3">
+    <inertial>
+      <origin
+        xyz="0.952435824722895 0.787310574656657 0.849999999999972"
+        rpy="0 0 0" />
+      <mass
+        value="2089.22272867894" />
+      <inertia
+        ixx="1784.16663646343"
+        ixy="-606.123978386154"
+        ixz="-5.2874882040983E-12"
+        iyy="2459.59622293675"
+        iyz="1.72788344294601E-11"
+        izz="1988.70377359282" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/arm_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/arm_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm_3_joint"
+    type="fixed">
+    <origin
+      xyz="-1.249 -2 0.85"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="top_plate" />
+    <child
+      link="arm_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="shoulder_30">
+    <inertial>
+      <origin
+        xyz="-0.000119737245783291 0 0.057175510350397"
+        rpy="0 0 0" />
+      <mass
+        value="8.05560156812752" />
+      <inertia
+        ixx="0.0468374920636485"
+        ixy="1.20865273262022E-19"
+        ixz="3.90837016729711E-05"
+        iyy="0.0468393660641385"
+        iyz="2.49606069854674E-17"
+        izz="0.0170993582585797" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_30.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.827450980392157 0.83921568627451 0.827450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_30.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_30_joint"
+    type="fixed">
+    <origin
+      xyz="2.45 0.4 0.6"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="arm_3" />
+    <child
+      link="shoulder_30" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="elbow_30">
+    <inertial>
+      <origin
+        xyz="0.246282802089477 0.276961524227064 3.66373598126302E-15"
+        rpy="0 0 0" />
+      <mass
+        value="3.03601604481672" />
+      <inertia
+        ixx="0.0270628957851369"
+        ixy="2.91975645050346E-16"
+        ixz="-3.9943940191189E-18"
+        iyy="0.000825043270771534"
+        iyz="6.77099738917469E-16"
+        izz="0.0273478762721396" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_30.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_30.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbow_30_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.0472 3.1416" />
+    <parent
+      link="shoulder_30" />
+    <child
+      link="elbow_30" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wrist_30">
+    <inertial>
+      <origin
+        xyz="0.00983778593517659 0.0978560489226927 1.5299691763504E-08"
+        rpy="0 0 0" />
+      <mass
+        value="2.67912524460953" />
+      <inertia
+        ixx="0.0143180850393242"
+        ixy="-0.00217201259070282"
+        ixz="6.72293136248597E-09"
+        iyy="0.00205437324612945"
+        iyz="-9.26763520059314E-09"
+        izz="0.0159156464522073" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_30.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_30.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wrist_30_joint"
+    type="fixed">
+    <origin
+      xyz="0.24651 0.64624 0"
+      rpy="0 0 3.1416" />
+    <parent
+      link="elbow_30" />
+    <child
+      link="wrist_30" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="engine_30">
+    <inertial>
+      <origin
+        xyz="0.199974015495015 0.877545107523058 -4.91273688396632E-15"
+        rpy="0 0 0" />
+      <mass
+        value="793.355843738094" />
+      <inertia
+        ixx="190.586500724057"
+        ixy="0.0106339468610899"
+        ixz="2.80580077059026E-16"
+        iyy="14.5624503451681"
+        iyz="2.29775029809924E-14"
+        izz="190.582428992398" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_30.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.647058823529412 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_30.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="engine_30_joint"
+    type="fixed">
+    <origin
+      xyz="1.68 0.215 0"
+      rpy="-3.1416 -3.0844E-28 -1.5708" />
+    <parent
+      link="wrist_30" />
+    <child
+      link="engine_30" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="shoulder_31">
+    <inertial>
+      <origin
+        xyz="-0.000119737245782847 5.55111512312578E-17 0.057175510350397"
+        rpy="0 0 0" />
+      <mass
+        value="8.05560156812752" />
+      <inertia
+        ixx="0.0468374920636484"
+        ixy="1.65651108451206E-19"
+        ixz="3.90837016729714E-05"
+        iyy="0.0468393660641384"
+        iyz="1.96617350158091E-17"
+        izz="0.0170993582585797" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_31.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.827450980392157 0.83921568627451 0.827450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/shoulder_31.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_31_joint"
+    type="fixed">
+    <origin
+      xyz="2.45 0.4 1.1"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="arm_3" />
+    <child
+      link="shoulder_31" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="elbow_31">
+    <inertial>
+      <origin
+        xyz="0.246282802089478 0.276961524227063 3.66373598126302E-15"
+        rpy="0 0 0" />
+      <mass
+        value="3.03601604481672" />
+      <inertia
+        ixx="0.027062895785137"
+        ixy="2.94333784775502E-16"
+        ixz="-4.08195388360829E-18"
+        iyy="0.000825043270771532"
+        iyz="6.77913997411786E-16"
+        izz="0.0273478762721396" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_31.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/elbow_31.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbow_31_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.0472 3.1416" />
+    <parent
+      link="shoulder_31" />
+    <child
+      link="elbow_31" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wrist_31">
+    <inertial>
+      <origin
+        xyz="0.00983778593517792 0.097856048922691 1.52996917357484E-08"
+        rpy="0 0 0" />
+      <mass
+        value="2.67912524460955" />
+      <inertia
+        ixx="0.0143180850393243"
+        ixy="-0.0021720125907029"
+        ixz="6.72293136809381E-09"
+        iyy="0.00205437324612952"
+        iyz="-9.26763521530965E-09"
+        izz="0.0159156464522075" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_31.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/wrist_31.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wrist_31_joint"
+    type="fixed">
+    <origin
+      xyz="0.24651 0.64624 0"
+      rpy="0 0 3.1416" />
+    <parent
+      link="elbow_31" />
+    <child
+      link="wrist_31" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="engine_31">
+    <inertial>
+      <origin
+        xyz="0.199974015495015 0.877545107523057 -7.66053886991358E-15"
+        rpy="0 0 0" />
+      <mass
+        value="793.355843738094" />
+      <inertia
+        ixx="190.586500724057"
+        ixy="0.0106339468611503"
+        ixz="-7.02133363173509E-15"
+        iyy="14.5624503451681"
+        iyz="-4.81585225025584E-13"
+        izz="190.582428992398" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_31.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.647058823529412 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://msl_skycrane_description/meshes/engine_31.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="engine_31_joint"
+    type="fixed">
+    <origin
+      xyz="1.68 0.215 0"
+      rpy="-3.1416 -3.7076E-28 -1.5708" />
+    <parent
+      link="wrist_31" />
+    <child
+      link="engine_31" />
     <axis
       xyz="0 0 0" />
   </joint>
