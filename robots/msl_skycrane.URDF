@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <robot
   name="msl_skycrane">
   <link
@@ -39,6 +40,12 @@
           filename="package://msl_skycrane_description/meshes/base_link.STL" />
       </geometry>
     </collision>
+    <gazebo>
+      <plugin name="skycrane_drive" filename="libgazebo_ros_skycrane.so">
+        <alwaysOn>true</alwaysOn>
+        <bodyName>base_link</bodyName>
+      </plugin>
+    </gazebo>
   </link>
   <link
     name="top_plate">
