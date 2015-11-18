@@ -59,32 +59,42 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        arm_0:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        arm_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        arm_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        arm_3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        elbow_00:
+        elbow00:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        elbow10:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        elbow11:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        elbow20:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        elbow21:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        elbow30:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        elbow31:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -94,112 +104,107 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        elbow_10:
+        engine00:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        elbow_11:
+        engine01:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        elbow_20:
+        engine10:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        elbow_21:
+        engine11:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        elbow_30:
+        engine20:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        elbow_31:
+        engine21:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        engine_00:
+        engine30:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        engine_01:
+        engine31:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        engine_10:
+        imu_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        engine_11:
+        shoulder00:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        engine_20:
+        shoulder01:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        engine_21:
+        shoulder10:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        engine_30:
+        shoulder11:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        engine_31:
+        shoulder20:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        shoulder_00:
+        shoulder21:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        shoulder_01:
+        shoulder30:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        shoulder_10:
+        shoulder31:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        shoulder_11:
+        suport_engine0:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        shoulder_20:
+        suport_engine1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        shoulder_21:
+        suport_engine2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        shoulder_30:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        shoulder_31:
+        suport_engine3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -209,42 +214,42 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        wrist_00:
+        wrist00:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wrist_01:
+        wrist01:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wrist_10:
+        wrist10:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wrist_11:
+        wrist11:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wrist_20:
+        wrist20:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wrist_21:
+        wrist21:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wrist_30:
+        wrist30:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wrist_31:
+        wrist31:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -256,19 +261,171 @@ Visualization Manager:
       Value: true
       Visual Enabled: true
     - Class: rviz/TF
-      Enabled: false
+      Enabled: true
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        base_link:
+          Value: true
+        elbow00:
+          Value: true
+        elbow10:
+          Value: true
+        elbow11:
+          Value: true
+        elbow20:
+          Value: true
+        elbow21:
+          Value: true
+        elbow30:
+          Value: true
+        elbow31:
+          Value: true
+        elbow_01:
+          Value: true
+        engine00:
+          Value: true
+        engine01:
+          Value: true
+        engine10:
+          Value: true
+        engine11:
+          Value: true
+        engine20:
+          Value: true
+        engine21:
+          Value: true
+        engine30:
+          Value: true
+        engine31:
+          Value: true
+        imu_link:
+          Value: true
+        shoulder00:
+          Value: true
+        shoulder01:
+          Value: true
+        shoulder10:
+          Value: true
+        shoulder11:
+          Value: true
+        shoulder20:
+          Value: true
+        shoulder21:
+          Value: true
+        shoulder30:
+          Value: true
+        shoulder31:
+          Value: true
+        suport_engine0:
+          Value: true
+        suport_engine1:
+          Value: true
+        suport_engine2:
+          Value: true
+        suport_engine3:
+          Value: true
+        top_plate:
+          Value: true
+        wrist00:
+          Value: true
+        wrist01:
+          Value: true
+        wrist10:
+          Value: true
+        wrist11:
+          Value: true
+        wrist20:
+          Value: true
+        wrist21:
+          Value: true
+        wrist30:
+          Value: true
+        wrist31:
+          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        {}
+        base_link:
+          imu_link:
+            {}
+          top_plate:
+            suport_engine0:
+              shoulder00:
+                elbow00:
+                  wrist00:
+                    engine00:
+                      {}
+              shoulder01:
+                elbow_01:
+                  wrist01:
+                    engine01:
+                      {}
+            suport_engine1:
+              shoulder10:
+                elbow10:
+                  wrist10:
+                    engine10:
+                      {}
+              shoulder11:
+                elbow11:
+                  wrist11:
+                    engine11:
+                      {}
+            suport_engine2:
+              shoulder20:
+                elbow20:
+                  wrist20:
+                    engine20:
+                      {}
+              shoulder21:
+                elbow21:
+                  wrist21:
+                    engine21:
+                      {}
+            suport_engine3:
+              shoulder30:
+                elbow30:
+                  wrist30:
+                    engine30:
+                      {}
+              shoulder31:
+                elbow31:
+                  wrist31:
+                    engine31:
+                      {}
       Update Interval: 0
+      Value: true
+    - Class: rviz/Axes
+      Enabled: true
+      Length: 1
+      Name: Axes
+      Radius: 0.1
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 1
+      Arrow Width: 0.5
+      Class: rviz/WrenchStamped
+      Enabled: false
+      Force Arrow Scale: 1
+      Force Color: 204; 51; 51
+      History Length: 1
+      Name: WrenchStamped
+      Topic: /skycrane/WrenchTotal
+      Torque Arrow Scale: 1
+      Torque Color: 204; 204; 51
       Value: false
+    - Alpha: 1
+      Class: rviz_plugin_tutorials/Imu
+      Color: 204; 51; 204
+      Enabled: true
+      History Length: 1
+      Name: Imu
+      Topic: /skycrane/IMU/data
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -293,22 +450,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 11.2412
+      Distance: 30.4436
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 2.29968
-        Y: 3.56091
-        Z: 2.21683
+        X: 2.92762
+        Y: -0.445282
+        Z: 1.95907
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.464796
+      Pitch: 0.369796
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.16357
+      Yaw: 5.22176
     Saved: ~
 Window Geometry:
   Displays:

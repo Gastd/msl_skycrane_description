@@ -1,0 +1,715 @@
+<?xml version="1.0"?>
+<sdf version='1.4'>
+  <model name='msl_skycrane_description'>
+    <link name='base_link'>
+      <pose>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.0822439 0.113159 -1.39825 0 -0 0</pose>
+        <mass>6249.71</mass>
+        <inertia>
+          <ixx>29606.2</ixx>
+          <ixy>-14800.1</ixy>
+          <ixz>-0.0623973</ixz>
+          <iyy>46598.5</iyy>
+          <iyz>78.1545</iyz>
+          <izz>71748.2</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_elbow00'>
+        <pose>1.48026 3.04441 -1.19591 1.5708 1.04719 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow00.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_elbow10'>
+        <pose>3.31128 0.372975 -1.19592 1.5708 1.0472 6.36218e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow10.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_elbow11'>
+        <pose>3.31128 -0.127025 -1.19592 1.5708 1.0472 6.36218e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow11.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_elbow20'>
+        <pose>-1.40237 -2.94845 -1.09593 -1.5708 1.0472 -2.0944</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow20.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_elbow21'>
+        <pose>-1.74878 -2.54845 -1.19593 1.5708 -1.0472 1.04719</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow21.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_elbow30'>
+        <pose>-3.14679 -0.127025 -1.19592 1.5708 -1.0472 -6.36218e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow30.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_elbow31'>
+        <pose>-3.14679 0.372975 -1.19592 1.5708 -1.0472 -6.36218e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow31.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_elbow_01'>
+        <pose>1.91327 2.79441 -1.19591 1.5708 1.04719 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow_01.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_engine00'>
+        <pose>2.01036 3.96259 -2.52369 1.5708 -0.523602 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine00.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_engine01'>
+        <pose>2.44337 3.71259 -2.52369 1.5708 -0.523602 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine01.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_engine10'>
+        <pose>4.3715 0.37298 -2.5237 1.5708 -0.523599 -2.12073e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine10.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_engine11'>
+        <pose>4.3715 -0.12702 -2.5237 1.5708 -0.523599 -2.12073e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine11.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_engine20'>
+        <pose>-1.84588 -3.71662 -2.52371 1.57079 -0.523596 -2.09439</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine20.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_engine21'>
+        <pose>-2.27889 -3.46662 -2.52371 1.57079 -0.523596 -2.09439</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine21.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_engine30'>
+        <pose>-4.20701 -0.12702 -2.5237 1.57079 -0.523599 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine30.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_engine31'>
+        <pose>-4.20701 0.37298 -2.5237 1.57078 -0.523602 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine31.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_shoulder00'>
+        <pose>1.46526 3.01843 -1.49787 1.83659e-06 -3.18109e-06 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder00.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_shoulder01'>
+        <pose>1.89827 2.76843 -1.49787 1.83659e-06 -3.18109e-06 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder01.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_shoulder10'>
+        <pose>3.28128 0.372976 -1.49788 3.67321e-06 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder10.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_shoulder11'>
+        <pose>3.28128 -0.127024 -1.49788 3.67321e-06 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder11.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_shoulder20'>
+        <pose>-1.30077 -2.77247 -1.49789 -1.8366e-06 3.18109e-06 -2.0944</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder20.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_shoulder21'>
+        <pose>-1.51897 -3.15042 -0.961289 -1.8366e-06 3.18109e-06 -2.0944</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder21.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_shoulder30'>
+        <pose>-3.11679 -0.127024 -1.49788 -3.67321e-06 -3.23109e-15 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder30.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_shoulder31'>
+        <pose>-3.11679 0.372976 -1.49788 -3.67321e-06 -3.23109e-15 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder31.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_suport_engine0'>
+        <pose>-0.029356 1.62968 -1.89787 1.5708 -3.18109e-06 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/suport_engine0.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_suport_engine1'>
+        <pose>1.33128 0.972977 -1.89788 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/suport_engine1.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_suport_engine2'>
+        <pose>0.193847 -1.38372 -1.89789 1.57079 3.18109e-06 -2.0944</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/suport_engine2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_suport_engine3'>
+        <pose>-1.16679 -0.727023 -1.89788 1.57079 -3.23109e-15 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/suport_engine3.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_top_plate'>
+        <pose>0.082244 0.12297 0.10212 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/top_plate.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_wrist00'>
+        <pose>1.68346 3.39637 -0.961265 -1.57079 1.04719 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist00.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_wrist01'>
+        <pose>2.11647 3.14637 -0.961266 -1.57079 1.04719 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist01.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_wrist10'>
+        <pose>3.71769 0.372974 -0.961277 -1.57079 1.0472 6.36218e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist10.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_wrist11'>
+        <pose>3.71769 -0.127026 -0.961278 -1.57079 1.0472 6.36218e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist11.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_wrist20'>
+        <pose>-1.51897 -3.15042 -0.961289 -1.5708 1.0472 -2.0944</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist20.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_wrist21'>
+        <pose>-1.95199 -2.90042 -0.961289 -1.5708 1.0472 -2.0944</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist21.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_wrist30'>
+        <pose>-3.5532 -0.127026 -0.961278 -1.5708 1.0472 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist30.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_collision_wrist31'>
+        <pose>-3.5532 0.372974 -0.961277 -1.5708 1.0472 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist31.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_elbow00'>
+        <pose>1.48026 3.04441 -1.19591 1.5708 1.04719 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow00.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_elbow10'>
+        <pose>3.31128 0.372975 -1.19592 1.5708 1.0472 6.36218e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow10.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_elbow11'>
+        <pose>3.31128 -0.127025 -1.19592 1.5708 1.0472 6.36218e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow11.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_elbow20'>
+        <pose>-1.40237 -2.94845 -1.09593 -1.5708 1.0472 -2.0944</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow20.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_elbow21'>
+        <pose>-1.74878 -2.54845 -1.19593 1.5708 -1.0472 1.04719</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow21.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_elbow30'>
+        <pose>-3.14679 -0.127025 -1.19592 1.5708 -1.0472 -6.36218e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow30.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_elbow31'>
+        <pose>-3.14679 0.372975 -1.19592 1.5708 -1.0472 -6.36218e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow31.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_elbow_01'>
+        <pose>1.91327 2.79441 -1.19591 1.5708 1.04719 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/elbow_01.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_engine00'>
+        <pose>2.01036 3.96259 -2.52369 1.5708 -0.523602 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine00.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_engine01'>
+        <pose>2.44337 3.71259 -2.52369 1.5708 -0.523602 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine01.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_engine10'>
+        <pose>4.3715 0.37298 -2.5237 1.5708 -0.523599 -2.12073e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine10.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_engine11'>
+        <pose>4.3715 -0.12702 -2.5237 1.5708 -0.523599 -2.12073e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine11.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_engine20'>
+        <pose>-1.84588 -3.71662 -2.52371 1.57079 -0.523596 -2.09439</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine20.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_engine21'>
+        <pose>-2.27889 -3.46662 -2.52371 1.57079 -0.523596 -2.09439</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine21.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_engine30'>
+        <pose>-4.20701 -0.12702 -2.5237 1.57079 -0.523599 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine30.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_engine31'>
+        <pose>-4.20701 0.37298 -2.5237 1.57078 -0.523602 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/engine31.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_shoulder00'>
+        <pose>1.46526 3.01843 -1.49787 1.83659e-06 -3.18109e-06 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder00.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_shoulder01'>
+        <pose>1.89827 2.76843 -1.49787 1.83659e-06 -3.18109e-06 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder01.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_shoulder10'>
+        <pose>3.28128 0.372976 -1.49788 3.67321e-06 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder10.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_shoulder11'>
+        <pose>3.28128 -0.127024 -1.49788 3.67321e-06 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder11.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_shoulder20'>
+        <pose>-1.30077 -2.77247 -1.49789 -1.8366e-06 3.18109e-06 -2.0944</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder20.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_shoulder21'>
+        <pose>-1.51897 -3.15042 -0.961289 -1.8366e-06 3.18109e-06 -2.0944</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder21.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_shoulder30'>
+        <pose>-3.11679 -0.127024 -1.49788 -3.67321e-06 -3.23109e-15 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder30.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_shoulder31'>
+        <pose>-3.11679 0.372976 -1.49788 -3.67321e-06 -3.23109e-15 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/shoulder31.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_suport_engine0'>
+        <pose>-0.029356 1.62968 -1.89787 1.5708 -3.18109e-06 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/suport_engine0.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_suport_engine1'>
+        <pose>1.33128 0.972977 -1.89788 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/suport_engine1.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_suport_engine2'>
+        <pose>0.193847 -1.38372 -1.89789 1.57079 3.18109e-06 -2.0944</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/suport_engine2.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_suport_engine3'>
+        <pose>-1.16679 -0.727023 -1.89788 1.57079 -3.23109e-15 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/suport_engine3.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_top_plate'>
+        <pose>0.082244 0.12297 0.10212 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/top_plate.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_wrist00'>
+        <pose>1.68346 3.39637 -0.961265 -1.57079 1.04719 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist00.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_wrist01'>
+        <pose>2.11647 3.14637 -0.961266 -1.57079 1.04719 1.0472</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist01.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_wrist10'>
+        <pose>3.71769 0.372974 -0.961277 -1.57079 1.0472 6.36218e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist10.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_wrist11'>
+        <pose>3.71769 -0.127026 -0.961278 -1.57079 1.0472 6.36218e-06</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist11.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_wrist20'>
+        <pose>-1.51897 -3.15042 -0.961289 -1.5708 1.0472 -2.0944</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist20.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_wrist21'>
+        <pose>-1.95199 -2.90042 -0.961289 -1.5708 1.0472 -2.0944</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist21.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_wrist30'>
+        <pose>-3.5532 -0.127026 -0.961278 -1.5708 1.0472 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist30.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_wrist31'>
+        <pose>-3.5532 0.372974 -0.961277 -1.5708 1.0472 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://msl_skycrane_description/meshes/wrist31.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <static>0</static>
+    <plugin name='GazeboRosSkycrane' filename='libgazebo_ros_skycrane.so'>
+      <robotNamespace>/msl_skycrane</robotNamespace>
+      <alwaysOn>true</alwaysOn>
+      <bodyName>base_link</bodyName>
+      <topicName>CmdMotorPower</topicName>
+    </plugin>
+  </model>
+</sdf>
