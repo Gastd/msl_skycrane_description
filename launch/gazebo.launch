@@ -8,8 +8,9 @@
   <arg name="debug" default="false"/>
   <arg name="physics" default="ode"/>
   <arg name="verbose" default="true"/>
-  <arg name="world_name" default="worlds/empty.world"/>
-  <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+  <!-- <arg name="world_name" default="worlds/empty.world"/> -->
+  <!-- <include file="$(find gazebo_ros)/launch/empty_world.launch" /> -->
+  <include file="$(find hratc2015_framework)/launch/world.launch" />
 
   <arg
     name="model" />
