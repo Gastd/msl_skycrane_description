@@ -9,8 +9,8 @@
   <arg name="physics" default="ode"/>
   <arg name="verbose" default="true"/>
   <!-- <arg name="world_name" default="worlds/empty.world"/> -->
-  <!-- <include file="$(find gazebo_ros)/launch/empty_world.launch" /> -->
-  <include file="$(find hratc2015_framework)/launch/world.launch" />
+  <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+  <!-- <include file="$(find hratc2015_framework)/launch/world.launch" /> -->
 
   <arg
     name="model" />
@@ -29,7 +29,7 @@
     pkg="robot_state_publisher"
     type="state_publisher" />
 
-  <node name="odom" pkg="robot_localization" type="ekf_localization_node" >
+<!--   <node name="odom" pkg="robot_localization" type="ekf_localization_node" >
     <param name="world_frame" value="/odom"/>
     <param name="odom_frame" value="/odom"/>
     <param name="base_link_frame" value="/base_link"/>
@@ -40,23 +40,23 @@
                                      true, true, true,
                                      true, true, true]</rosparam>
     <remap from="odometry/filtered" to="odom"/>
-  </node>
+  </node> -->
 
-  <node pkg="robot_localization" type="navsat_transform_node" name="navsat_transform_node" respawn="true">
+<!--   <node pkg="robot_localization" type="navsat_transform_node" name="navsat_transform_node" respawn="true">
     <param name="magnetic_declination_radians" value="0"/>
     <param name="yaw_offset" value="0"/>
     <param name="publish_filtered_gps" value="true" />
     <param name="use_odometry_yaw" value="false" />
     <remap from="/imu/data" to="/skycrane/IMU/data" />
     <remap from="/gps/fix" to="/skycrane/GPS/data" />
-    <!-- <remap from="odometry/filtered" to="fake_odom"/> -->
-  </node>
+    <remap from="odometry/filtered" to="fake_odom"/>
+  </node> -->
 
   <node
     name="spawn_model"
     pkg="gazebo_ros"
     type="spawn_model"
-    args="-file $(find msl_skycrane_description)/robots/msl_skycrane.URDF -urdf -z 5 -model msl_skycrane"
+    args="-file $(find msl_skycrane_description)/robots/msl_skycrane.URDF -urdf -z 500 -model msl_skycrane"
     output="screen" />
 <!--   <include
     file="$(find pr2_controller_manager)/controller_manager.launch" /> -->

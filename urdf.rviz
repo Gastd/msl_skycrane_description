@@ -6,7 +6,6 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /TF1
       Splitter Ratio: 0.5
     Tree Height: 719
   - Class: rviz/Selection
@@ -261,144 +260,19 @@ Visualization Manager:
       Value: true
       Visual Enabled: true
     - Class: rviz/TF
-      Enabled: true
+      Enabled: false
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        base_link:
-          Value: true
-        elbow00:
-          Value: true
-        elbow10:
-          Value: true
-        elbow11:
-          Value: true
-        elbow20:
-          Value: true
-        elbow21:
-          Value: true
-        elbow30:
-          Value: true
-        elbow31:
-          Value: true
-        elbow_01:
-          Value: true
-        engine00:
-          Value: true
-        engine01:
-          Value: true
-        engine10:
-          Value: true
-        engine11:
-          Value: true
-        engine20:
-          Value: true
-        engine21:
-          Value: true
-        engine30:
-          Value: true
-        engine31:
-          Value: true
-        imu_link:
-          Value: true
-        shoulder00:
-          Value: true
-        shoulder01:
-          Value: true
-        shoulder10:
-          Value: true
-        shoulder11:
-          Value: true
-        shoulder20:
-          Value: true
-        shoulder21:
-          Value: true
-        shoulder30:
-          Value: true
-        shoulder31:
-          Value: true
-        suport_engine0:
-          Value: true
-        suport_engine1:
-          Value: true
-        suport_engine2:
-          Value: true
-        suport_engine3:
-          Value: true
-        top_plate:
-          Value: true
-        wrist00:
-          Value: true
-        wrist01:
-          Value: true
-        wrist10:
-          Value: true
-        wrist11:
-          Value: true
-        wrist20:
-          Value: true
-        wrist21:
-          Value: true
-        wrist30:
-          Value: true
-        wrist31:
-          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        base_link:
-          imu_link:
-            {}
-          top_plate:
-            suport_engine0:
-              shoulder00:
-                elbow00:
-                  wrist00:
-                    engine00:
-                      {}
-              shoulder01:
-                elbow_01:
-                  wrist01:
-                    engine01:
-                      {}
-            suport_engine1:
-              shoulder10:
-                elbow10:
-                  wrist10:
-                    engine10:
-                      {}
-              shoulder11:
-                elbow11:
-                  wrist11:
-                    engine11:
-                      {}
-            suport_engine2:
-              shoulder20:
-                elbow20:
-                  wrist20:
-                    engine20:
-                      {}
-              shoulder21:
-                elbow21:
-                  wrist21:
-                    engine21:
-                      {}
-            suport_engine3:
-              shoulder30:
-                elbow30:
-                  wrist30:
-                    engine30:
-                      {}
-              shoulder31:
-                elbow31:
-                  wrist31:
-                    engine31:
-                      {}
+        {}
       Update Interval: 0
-      Value: true
+      Value: false
     - Class: rviz/Axes
       Enabled: true
       Length: 1
@@ -421,11 +295,11 @@ Visualization Manager:
     - Alpha: 1
       Class: rviz_plugin_tutorials/Imu
       Color: 204; 51; 204
-      Enabled: true
+      Enabled: false
       History Length: 1
       Name: Imu
       Topic: /skycrane/IMU/data
-      Value: true
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -450,22 +324,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 30.4436
+      Distance: 16.9849
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 2.92762
-        Y: -0.445282
-        Z: 1.95907
+        X: -3.28566
+        Y: -2.78064
+        Z: -0.568684
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.369796
+      Pitch: 0.284796
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.22176
+      Yaw: 4.32676
     Saved: ~
 Window Geometry:
   Displays:
