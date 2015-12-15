@@ -43,6 +43,7 @@ find_package(catkin REQUIRED std_msgs message_generation)
 add_message_files(
   FILES
   CmdMotorPower.msg
+  CmdMotorPowerStamped.msg
 )
 
 ## Generate services in the 'srv' folder

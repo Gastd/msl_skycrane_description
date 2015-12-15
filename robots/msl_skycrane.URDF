@@ -12,8 +12,9 @@
 
     <plugin name="GazeboRosImu" filename="libhector_gazebo_ros_imu.so">
       <alwaysOn>true</alwaysOn>
-      <updateRate>50.0</updateRate> 
+      <updateRate>20.0</updateRate> 
       <bodyName>imu_link</bodyName>
+      <frameId>imu_link</frameId>
       <topicName>/skycrane/IMU/data</topicName>
       <gaussianNoise>2.89e-08</gaussianNoise>
       <xyzOffsets>0 0 0</xyzOffsets>
@@ -92,7 +93,7 @@
   </link>
   <joint name="imu_joint" type="fixed">
     <axis xyz="1 0 0"/>      
-    <origin xyz="0 0 -1.5"/>
+    <origin xyz="0 0 -2" rpy="0 0 0" />
     <parent link="base_link"/>
     <child link="imu_link"/>
   </joint>
@@ -191,7 +192,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/suport_engine0.STL" />
+          filename="package://msl_skycrane_description/meshes/suport_engine.STL" />
       </geometry>
       <material
         name="">
@@ -205,7 +206,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/suport_engine0.STL" />
+          filename="package://msl_skycrane_description/meshes/suport_engine.STL" />
       </geometry>
     </collision>
   </link>
@@ -297,7 +298,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow00.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
       <material
         name="">
@@ -311,7 +312,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow00.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
     </collision>
   </link>
@@ -350,7 +351,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist00.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
       <material
         name="">
@@ -364,7 +365,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist00.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
     </collision>
   </link>
@@ -403,7 +404,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine00.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
       <material
         name="">
@@ -417,7 +418,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine00.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
     </collision>
   </link>
@@ -509,7 +510,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow_01.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
       <material
         name="">
@@ -523,7 +524,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow_01.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
     </collision>
   </link>
@@ -562,7 +563,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist01.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
       <material
         name="">
@@ -576,7 +577,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist01.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
     </collision>
   </link>
@@ -615,7 +616,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine01.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
       <material
         name="">
@@ -629,7 +630,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine01.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
     </collision>
   </link>
@@ -668,7 +669,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/suport_engine1.STL" />
+          filename="package://msl_skycrane_description/meshes/suport_engine.STL" />
       </geometry>
       <material
         name="">
@@ -682,7 +683,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/suport_engine1.STL" />
+          filename="package://msl_skycrane_description/meshes/suport_engine.STL" />
       </geometry>
     </collision>
   </link>
@@ -774,7 +775,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow10.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
       <material
         name="">
@@ -788,7 +789,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow10.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
     </collision>
   </link>
@@ -827,7 +828,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist10.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
       <material
         name="">
@@ -841,7 +842,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist10.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
     </collision>
   </link>
@@ -880,7 +881,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine10.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
       <material
         name="">
@@ -894,7 +895,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine10.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
     </collision>
   </link>
@@ -986,7 +987,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow11.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
       <material
         name="">
@@ -1000,7 +1001,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow11.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
     </collision>
   </link>
@@ -1039,7 +1040,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist11.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
       <material
         name="">
@@ -1053,7 +1054,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist11.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
     </collision>
   </link>
@@ -1092,7 +1093,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine11.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
       <material
         name="">
@@ -1106,7 +1107,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine11.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
     </collision>
   </link>
@@ -1145,7 +1146,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/suport_engine2.STL" />
+          filename="package://msl_skycrane_description/meshes/suport_engine.STL" />
       </geometry>
       <material
         name="">
@@ -1159,7 +1160,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/suport_engine2.STL" />
+          filename="package://msl_skycrane_description/meshes/suport_engine.STL" />
       </geometry>
     </collision>
   </link>
@@ -1251,7 +1252,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow20.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
       <material
         name="">
@@ -1265,7 +1266,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow20.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
     </collision>
   </link>
@@ -1304,7 +1305,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist20.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
       <material
         name="">
@@ -1318,7 +1319,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist20.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
     </collision>
   </link>
@@ -1357,7 +1358,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine20.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
       <material
         name="">
@@ -1371,7 +1372,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine20.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
     </collision>
   </link>
@@ -1463,7 +1464,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow21.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
       <material
         name="">
@@ -1477,7 +1478,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow21.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
     </collision>
   </link>
@@ -1516,7 +1517,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist21.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
       <material
         name="">
@@ -1530,7 +1531,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist21.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
     </collision>
   </link>
@@ -1569,7 +1570,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine21.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
       <material
         name="">
@@ -1583,7 +1584,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine21.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
     </collision>
   </link>
@@ -1622,7 +1623,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/suport_engine3.STL" />
+          filename="package://msl_skycrane_description/meshes/suport_engine.STL" />
       </geometry>
       <material
         name="">
@@ -1636,7 +1637,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/suport_engine3.STL" />
+          filename="package://msl_skycrane_description/meshes/suport_engine.STL" />
       </geometry>
     </collision>
   </link>
@@ -1728,7 +1729,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow30.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
       <material
         name="">
@@ -1742,7 +1743,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow30.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
     </collision>
   </link>
@@ -1781,7 +1782,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist30.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
       <material
         name="">
@@ -1795,7 +1796,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist30.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
     </collision>
   </link>
@@ -1834,7 +1835,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine30.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
       <material
         name="">
@@ -1848,7 +1849,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine30.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
     </collision>
   </link>
@@ -1940,7 +1941,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow31.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
       <material
         name="">
@@ -1954,7 +1955,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/elbow31.STL" />
+          filename="package://msl_skycrane_description/meshes/elbow.STL" />
       </geometry>
     </collision>
   </link>
@@ -1993,7 +1994,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist31.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
       <material
         name="">
@@ -2007,7 +2008,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/wrist31.STL" />
+          filename="package://msl_skycrane_description/meshes/wrist.STL" />
       </geometry>
     </collision>
   </link>
@@ -2046,7 +2047,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine31.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
       <material
         name="">
@@ -2060,7 +2061,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://msl_skycrane_description/meshes/engine31.STL" />
+          filename="package://msl_skycrane_description/meshes/engine.STL" />
       </geometry>
     </collision>
   </link>
